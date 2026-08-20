@@ -1,0 +1,15 @@
+class Solution {
+public:
+    bool f(int n){
+        while(n!=1){
+            if(n%3==0)n/=3;
+            else return false;
+        }
+        if(n==1)return true;
+        else return false;
+    }
+    bool isPowerOfThree(int n) {
+        if(n<=0)return false;
+        return f(n);
+    }
+};
